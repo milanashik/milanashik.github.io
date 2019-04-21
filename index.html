@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="resumeList">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Personal Site | Milan Bhandari </title>
+  <script src="js/angular.min.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -99,7 +100,7 @@
 
 
     <section class="about-section section">
-      <div class="container">
+      <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
             <div class="heading">
@@ -108,13 +109,7 @@
             </div>
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
-            <p class="margin-b-50">Programming enthusiast with the aptitude for working and learning in the technological field, pursuing Masters of Software Engineering at Villanova University.
-
-              I have gained valuable experience as a full stack developer working with diverse clients and technologies such as ASP.NET (MVC), Java, PHP, JavaScript, jQuery, HTML, CSS, JSON, web services, Database Design, Git, GitHub, SQL Server, etc. 
-              
-              Actively seeking Internship/full time. Graduating Dec 2019.</p>
-            
-            
+            <p class="margin-b-50" ng-repeat="lists in list.data.aboutMe">{{lists.description}}</p>
             </div><!-- row -->
           </div><!-- col-sm-8 -->
         </div><!-- row -->
@@ -122,7 +117,7 @@
     </section>
 
     <section class="experience-section section">
-      <div class="container">
+      <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
             <div class="heading">
@@ -132,22 +127,17 @@
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
           
-            <div class="experience margin-b-50">
-              <h4><b>JUNIOR PROJECT MANAGER</b></h4>
-              <h5 class="font-yellow"><b>DESIGN STUDIO</b></h5>
-              <h6 class="margin-t-10">MARCH 2015 - PRESENT</h6>
-              <p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+            <div class="experience margin-b-50" ng-repeat="lists in list.data.experiencesList">
+              <h4><b>{{lists.role}}</b></h4>
+              <h5 class="font-yellow"><b>{{lists.company}}</b></h5>
+              <h6 class="margin-t-10">{{lists.date}}</h6>
+              <p class="font-semi-white margin-tb-30">Description of company and role </p>
               <ul class="list margin-b-30">
-                <li>Duis non volutpat arcu, eu mollis tellus.</li>
-                <li>Quis consequat nulla effi citur at.</li>
-                <li>Sed finibus aliquam neque sit.</li>
+                <li ng-repeat="content in lists.activities">{{content.activity}}</li>
               </ul>
             </div><!-- experience -->
             
-            <div class="experience margin-b-50">
+          <!--   <div class="experience margin-b-50">
               <h4><b>WEB MASTER/WEB DEVELOPER</b></h4>
               <h5 class="font-yellow"><b>DESIGN &amp; WEB STUDIO</b></h5>
               <h6 class="margin-t-10">APRIL 2014 - FEBRUARY 2015</h6>
@@ -160,7 +150,7 @@
                 <li>Quis consequat nulla effi citur at.</li>
                 <li>Sed finibus aliquam neque sit.</li>
               </ul>
-            </div><!-- experience -->
+            </div>   experience -->
             
           </div><!-- col-sm-8 -->
         </div><!-- row -->
@@ -169,7 +159,7 @@
     </section>
 
     <section class="education-section section">
-      <div class="container">
+      <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
             <div class="heading">
@@ -179,34 +169,11 @@
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
             <div class="education-wrapper">
-              <div class="education margin-b-50">
-                <h4><b>MASTER DEGREE IN SCIENCE</b></h4>
-                <h5 class="font-yellow"><b>UCLA - SCIENCE AND ENGINEERING</b></h5>
-                <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2010(2 YEARS)</h6>
-                <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-              </div><!-- education -->
-              
-              <div class="education margin-b-50">
-                <h4><b>COURSE ON COMPUTER SCIENCE</b></h4>
-                <h5 class="font-yellow"><b>NEW YORK PUBLIC UNIVERSITY</b></h5>
-                <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2009(6 MONTHS)</h6>
-                <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-              </div><!-- education -->
-              
-              <div class="education margin-b-50">
-                <h4><b>GRADUATED VALEDICTERIAN</b></h4>
-                <h5 class="font-yellow"><b>PUBLIC COLLEGE</b></h5>
-                <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2008(4 YEARS)</h6>
-                <p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
+              <div class="education margin-b-50" ng-repeat="lists in list.data.educationList">
+                <h4><b>{{lists.university}}</b>, {{lists.location}}</h4>
+                <h5 class="font-yellow"><b>{{lists.course}}</b></h5>
+                <h6 class="font-lite-black margin-t-10">{{lists.date}},  Cumulative GPA: {{lists.gpa}}</h6>
+                <p class="margin-tb-30"><strong>Scholarship: </strong>{{lists.scholarship}} </p>
               </div><!-- education -->
             </div><!-- education-wrapper -->
           </div><!-- col-sm-8 -->
@@ -218,7 +185,7 @@
     <footer>
       <p class="copyright">
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright ©<script>document.write(new Date().getFullYear());</script>2019 All rights reserved
+  Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
   
@@ -235,6 +202,10 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers/list.js"></script>
+  <script src="js/factory/dataService.js"></script>
 </body>
 
 </html>
