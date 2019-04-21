@@ -13,6 +13,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -26,7 +27,7 @@
           <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-4">
               <div class="information">
-                <i class="fa fa-map-marked-alt"></i>
+                <i class="fa fa-map-marked-alt" data-aos="fade-up" data-aos-anchor-placement="top-center"></i>
                 <div class="shift-right">
                   <h6>E. Lancaster Avenue</h6>
                   <h6>Bryn Mawr, PA 19010</h6>
@@ -36,7 +37,7 @@
             
             <div class="col-sm-6 col-md-6 col-lg-4">
               <div class="information">
-                <i class="fa fa-phone-square"></i>
+                <i class="fa fa-phone-square" data-aos="fade-up" data-aos-anchor-placement="top-center"></i>
                 <div class="shift-right">
                   <h6>610-969-5246</h6>
                   <h6>Cellphone</h6>
@@ -46,7 +47,7 @@
             
             <div class="col-sm-6 col-md-6 col-lg-4">
               <div class="information">
-                <i class="fa fa-envelope"></i>
+                <i class="fa fa-envelope" data-aos="fade-up" data-aos-anchor-placement="top-center"></i>
                 <div class="shift-right">
                   <h6>milanbhandari2013@gmail.com</h6>
                   <h6>mbhanda2@villanove.edu</h6>
@@ -60,40 +61,41 @@
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-10 col-lg-8">
               <div class="intro">
-                <div class="profile-pic"><img src="img/profile.jpg" alt=""></div>
-                <h2><b>Milan Bhandari</b></h2>
+                <div class="profile-pic" data-aos="fade-zoom-in" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="300"><img src="img/profile.jpg" alt=""></div>
+                <h2><b class="wow">Milan Bhandari</b></h2>
                 <h4 class="font-orange">Software Engineer</h4>
-                <ul class = "social-icon">
+                <ul class = "social-icon" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                   <li>
                      <!--Facebook-->
-                  <a class="btn-floating btn-lg btn-fb" type="button" href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn-floating btn-lg btn-fb"  href="https://www.facebook.com/milan.bhandari.95" target="_blank"><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li><!--Twitter-->
-                    <a class="btn-floating btn-lg btn-tw" type="button" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><!--Google +-->
-                  <a class="btn-floating btn-lg btn-gplus" type="button" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                <li>
+                    <a class="btn-floating btn-lg btn-tw"  href="https://twitter.com/milanashik2" target="_blank"><i class="fab fa-twitter"></i></a></li>
                    <!--Linkedin-->
-  <a class="btn-floating btn-lg btn-li" type="button" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-floating btn-lg btn-li"  href="https://www.linkedin.com/in/milanbhandari95/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </li> 
                 <li>
                   <!--Instagram-->
-  <a class="btn-floating btn-lg btn-ins" type="button" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn-floating btn-lg btn-ins"  href="https://www.instagram.com/milanashik/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li> 
                 <li>
                   <!--Github-->
-  <a class="btn-floating btn-lg btn-git" type="button" href="#"><i class="fab fa-github"></i></a>
+                    <a class="btn-floating btn-lg btn-git"  href="https://github.com/milanashik" target="_blank"><i class="fab fa-github"></i></a>
                 </li>
                 </ul>
+                <ul>
+                
+              </ul>
                
    <ul>
-    <li><a class="downlad-btn" href="#">Download Resume</a></li>
-   </ul>
+    <li><a class="downlad-btn" data-aos="fade-zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600" href="#">Download Resume</a></li>
+   </ul> 
   
   
               </div><!-- intro -->
               
             </div><!-- col-sm-8 -->
+           
           </div><!-- row -->
         </div><!-- container -->
     </section>
@@ -103,13 +105,14 @@
       <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
-            <div class="heading">
+            <div class="heading" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h3><b>About me</b></h3>
               <h6 class="font-lite-black"><b></b></h6>
             </div>
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
-            <p class="margin-b-50" ng-repeat="lists in list.data.aboutMe">{{lists.description}}</p>
+            <p class="margin-b-50" ng-repeat="lists in list.data.aboutMe" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="100">
+              {{lists.description}}</p>
             </div><!-- row -->
           </div><!-- col-sm-8 -->
         </div><!-- row -->
@@ -120,38 +123,21 @@
       <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
-            <div class="heading">
+            <div class="heading" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h3><b>Work Experience</b></h3>
-              <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+              <h6 class="font-lite-black"><b>JUL 2014 – PRESENT</b></h6>
             </div>
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
           
-            <div class="experience margin-b-50" ng-repeat="lists in list.data.experiencesList">
+            <div class="experience margin-b-50" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" ng-repeat="lists in list.data.experiencesList">
               <h4><b>{{lists.role}}</b></h4>
-              <h5 class="font-yellow"><b>{{lists.company}}</b></h5>
-              <h6 class="margin-t-10">{{lists.date}}</h6>
-              <p class="font-semi-white margin-tb-30">Description of company and role </p>
+              <h5 class="font-color-style"><b>{{lists.company}}</b></h5>
+              <h6 class="margin-b-20">{{lists.date}}</h6>
               <ul class="list margin-b-30">
                 <li ng-repeat="content in lists.activities">{{content.activity}}</li>
               </ul>
             </div><!-- experience -->
-            
-          <!--   <div class="experience margin-b-50">
-              <h4><b>WEB MASTER/WEB DEVELOPER</b></h4>
-              <h5 class="font-yellow"><b>DESIGN &amp; WEB STUDIO</b></h5>
-              <h6 class="margin-t-10">APRIL 2014 - FEBRUARY 2015</h6>
-              <p class="font-semi-white margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
-                quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
-                eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
-              <ul class="list margin-b-30">
-                <li>Duis non volutpat arcu, eu mollis tellus.</li>
-                <li>Quis consequat nulla effi citur at.</li>
-                <li>Sed finibus aliquam neque sit.</li>
-              </ul>
-            </div>   experience -->
-            
           </div><!-- col-sm-8 -->
         </div><!-- row -->
       </div><!-- container -->
@@ -162,16 +148,16 @@
       <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
-            <div class="heading">
+            <div class="heading" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h3><b>Education</b></h3>
-              <h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+              <h6 class="font-lite-black"><b>ACADEMIC BACKGROUND</b></h6>
             </div>
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
             <div class="education-wrapper">
-              <div class="education margin-b-50" ng-repeat="lists in list.data.educationList">
+              <div class="education margin-b-50" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" ng-repeat="lists in list.data.educationList">
                 <h4><b>{{lists.university}}</b>, {{lists.location}}</h4>
-                <h5 class="font-yellow"><b>{{lists.course}}</b></h5>
+                <h5 class="font-color-style"><b>{{lists.course}}</b></h5>
                 <h6 class="font-lite-black margin-t-10">{{lists.date}},  Cumulative GPA: {{lists.gpa}}</h6>
                 <p class="margin-tb-30"><strong>Scholarship: </strong>{{lists.scholarship}} </p>
               </div><!-- education -->
@@ -202,7 +188,8 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.js"></script>
-
+  <script src="js/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="js/app.js"></script>
   <script src="js/controllers/list.js"></script>
   <script src="js/factory/dataService.js"></script>
