@@ -176,6 +176,27 @@ color:#3B5998;
   background: #357B79;
   color: #fff;
 }
+.add-bg{
+  background-image: url(../img/galexy.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 400px 200px;
+  height: 200px;
+  margin-top: -180px;
+}
+#rocket{
+  background-image: url(../img/workxp1.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 500px 600px;
+}
+#education-png{
+  background-image: url(../img/education.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 250px 250px;
+  margin-left: 10%;
+}
 .experience .list > li {
   display: block;
   position: relative;
@@ -204,6 +225,17 @@ color:#3B5998;
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+ #rocket{
+   display: none;
+ }
+ #education-png{
+   display: none;
+ }
+ .add-bg{
+   display: none;
+ }
+}
 
 
 

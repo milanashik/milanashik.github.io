@@ -61,10 +61,10 @@
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-10 col-lg-8">
               <div class="intro">
-                <div class="profile-pic" data-aos="fade-zoom-in" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="300"><img src="img/profile.jpg" alt=""></div>
-                <h2><b class="wow">Milan Bhandari</b></h2>
-                <h4 class="font-orange">Software Engineer</h4>
-                <ul class = "social-icon" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="profile-pic" data-aos="fade-zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="300"><img src="img/profile.jpg" alt=""></div>
+                <h2 data-aos="slide-up" data-aos-delay="300"><b>Milan Bhandari</b></h2>
+                <h4 class="font-orange" data-aos="slide-up" data-aos-delay="300">Software Engineer</h4>
+                <ul class = "social-icon" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="300">
                   <li>
                      <!--Facebook-->
                       <a class="btn-floating btn-lg btn-fb"  href="https://www.facebook.com/milan.bhandari.95" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -119,7 +119,7 @@
       </div><!-- container -->
     </section>
 
-    <section class="experience-section section">
+    <section class="experience-section section" id ="rocket">
       <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
@@ -129,7 +129,7 @@
             </div>
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
-          
+            <div class="add-bg img img-responsive" data-aos="zoom-in-up" data-aos-anchor-placement="top-center"></div>
             <div class="experience margin-b-50" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" ng-repeat="lists in list.data.experiencesList">
               <h4><b>{{lists.role}}</b></h4>
               <h5 class="font-color-style"><b>{{lists.company}}</b></h5>
@@ -144,7 +144,8 @@
       
     </section>
 
-    <section class="education-section section">
+    <section class="education-section section" id="education-png" data-aos="fade-right"
+    data-aos-anchor="#trigger-left" data-aos-offset="200" data-aos-delay="300" >
       <div class="container" ng-controller="listCtrl as list" ng-hide="false">
         <div class="row">
           <div class="col-sm-4">
@@ -154,7 +155,7 @@
             </div>
           </div><!-- col-sm-4 -->
           <div class="col-sm-8">
-            <div class="education-wrapper">
+            <div class="education-wrapper" id="trigger-left">
               <div class="education margin-b-50" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" ng-repeat="lists in list.data.educationList">
                 <h4><b>{{lists.university}}</b>, {{lists.location}}</h4>
                 <h5 class="font-color-style"><b>{{lists.course}}</b></h5>
