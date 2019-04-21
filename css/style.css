@@ -225,7 +225,7 @@ color:#3B5998;
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media  (max-width: 600px) {
  #rocket{
    display: none;
  }
