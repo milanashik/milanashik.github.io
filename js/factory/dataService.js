@@ -104,7 +104,7 @@
             role: "Software Engineer/Database Assistant",
             company: "Udan Software Pvt. Ltd., Kathmandu, Nepal",
             location: "Villanova, PA",
-            date: "Jan 2018 – Present",
+            date: "Jul 2014 – Mar 2017",
             activities: [
                 {
                 activity: "Database Migration: Decreased workload of migrating UN’s Micro-Enterprise Development"
