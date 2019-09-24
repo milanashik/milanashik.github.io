@@ -1,5 +1,7 @@
 # Personal Site
-Link: www.milanbhandari.github.io
+Name: Milan Bhandari
+
+Link: www.milanashik.github.io
 
 # Technology Used:
 
