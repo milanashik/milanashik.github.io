@@ -28,7 +28,7 @@
             location: "Villanova, PA",
             course: "Master of Science in Software Engineering",
             date: "Expected Dec 2019",
-            gpa: "3.89",
+            gpa: "3.89/4.0",
             scholarship: "Graduate Teaching Assistantship"
         },
         {
@@ -36,7 +36,7 @@
             location: "Kathmandu, Nepal",
             course: "Bachelor of Science in Computer Science and Information Technology",
             date: "Oct 2011 – Dec 2015",
-            gpa: "4.00",
+            gpa: "4.0/4.0",
             scholarship: "Merit-based Scholarship"
         }
     ]
@@ -57,6 +57,35 @@
                 },
                 {
                 activity: "Upgrade different departmental sites using PHP, MySQL, JavaScript, HTML, CSS."
+                }
+            ]
+        },
+        {
+            role: "R&D Intern",
+            company: "TA Instruments, Waters Corporation",
+            location: "Newcastle, DE",
+            date: "May 2019 – Aug 2019",
+            activities: [
+                {
+                activity: "Installed, deployed and configured Docker containers for AWS IoT Greengrass Core, Confluent Platform images, MemSQL database, and proprietary web server/application."
+                },
+                {
+                activity: "Implemented and configured the Confluent Kafka MQTT source connector to translate data coming from instruments into Kafka topics to be passed through the data pipeline."
+                },
+                {
+                activity: "Worked cross-functionally with FW/platform and SW teams to aggregate instrument signal descriptors and signal unit type descriptors; created and populated MemSQL database tables with aggregated data."
+                },
+                {
+                activity: "Implemented, configured, and tested the MemSQL Kafka pipeline so that data coming from Kafka could flow through a transform prior to being written to the relevant database tables."
+                },
+                {
+                activity: "Installed and configured Tableau to be able to query the MemSQL database to prepare data for business intelligence dashboard consumption. "
+                },
+                {
+                activity: "Researched, enhanced, and documented the usage model and all steps taken for configuring all the technologies involved in the project prototypes; documentation within team’s Atlassian Confluence collaboration software. "
+                },
+                {
+                 activity: "Actively participated in team meetings and in vendor meetings and training sessions."
                 }
             ]
         },
