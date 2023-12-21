@@ -18,7 +18,7 @@
     //about me content
     var aboutMe = [
         {
-            description: "Programming enthusiast with the aptitude for working and learning in the technological field, pursuing Masters of Software Engineering at Villanova University. I have gained valuable experience as a full stack developer working with diverse clients and technologies such as ASP.NET (MVC), Java, PHP, JavaScript, jQuery, HTML, CSS, JSON, web services, Database Design, Git, GitHub, SQL Server, etc. Actively seeking Internship/full time. Graduating Dec 2019."
+            description: "I am a Software Engineer with expertise in Azure DevOps.I have a keen interest in automation, system design, and architecture. Currently, I am involved in projects using C#, Azure, Microsoft Stacks, and DevOps."
         }
     ]
     //list of education
@@ -43,6 +43,26 @@
 
     //list of experiences
     var experiencesList = [
+        {
+            role: "Software Engineer II, DevOps",
+            company: "Waters Corporation, TA Instruments · Full-time",
+            location: "New Castle County, Delaware, United States",
+            date: "Aug 2020 - Present",
+            activities: [
+                {
+                activity: "Play a critical part in implementing a secure, robust, and high availability DevOps pipeline."
+                },
+                {
+                activity: "Assist in infrastructure management on the hybrid cloud system, automate build and deployment processes"
+                },
+                {
+                activity: "Develop tools and automation to improve workflows and processes and promote operational scalability and standardization"
+                },
+                {
+                activity: "Work closely with engineers, QA, and project managers throughout the development lifecycle to successfully delivering best in class and highly available systems that range in complexity and purpose"
+                }
+            ]
+        },
         {
             role: "Graduate Assistant",
             company: "Department of Computing Sciences",
